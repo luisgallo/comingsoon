@@ -3,7 +3,7 @@ import * as postgres from "https://deno.land/x/postgres@v0.14.2/mod.ts";
 
 // Get the connection string from the environment variable "DATABASE_URL"
 const databaseUrl = "postgresql://postgres:LaMadera1921#@db.ctzbhjgdjswhjgwblenb.supabase.co:5432/postgres";
-
+  
 // Create a database pool with three connections that are lazily established
 const pool = new postgres.Pool(databaseUrl, 3, true);
 
