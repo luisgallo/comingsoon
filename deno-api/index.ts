@@ -6,7 +6,7 @@ const databaseUrl = "postgresql://postgres:LaMadera1921#@db.ctzbhjgdjswhjgwblenb
   
 // Create a database pool with three connections that are lazily established
 const pool = new postgres.Pool(databaseUrl, 3, true);
-
+ 
 // Connect to the database
 const connection = await pool.connect();
 try {
